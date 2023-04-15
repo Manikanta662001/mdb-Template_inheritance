@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+    <title>Parent</title>
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+<body>
+   <center>
+    <h1 class="btn btn-success">mdb</h1><br>
+    {% block body_block %}
+    
+    <h1>This is parent Html page</h1>
+    {% endblock %}
+   </center>
+
+   
+
+   <script src="{% static 'js/bootstrap.js' %}"></script>
+   <script src="{% static 'js/jquery.js' %}"></script>
+   <script src="{% static 'js/mdb.js' %}"></script>
+   <script src="{% static 'js/popper.js' %}"></script>
+</body>
+</html>
